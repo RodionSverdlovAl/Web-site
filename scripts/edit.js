@@ -12,3 +12,6 @@ class Edit{
           <button onclick="play_stop_video()"></button>`;
     }
 }
+
+
+
