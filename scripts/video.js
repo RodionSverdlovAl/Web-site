@@ -1,16 +1,26 @@
 let editJS = document.getElementById("video");
 let dinamic_edits = [];
 
-dinamic_edits[0] = new Edit('1/5',link1);
+dinamic_edits[0] = new Edit('1',link1);
 editJS.append(dinamic_edits[0].edit_div);
-dinamic_edits[1] = new Edit('2/5',link2);
+dinamic_edits[1] = new Edit('2',link2);
 editJS.append(dinamic_edits[1].edit_div);
-dinamic_edits[2] = new Edit('3/5',link3);
+dinamic_edits[2] = new Edit('3',link3);
 editJS.append(dinamic_edits[2].edit_div);
-dinamic_edits[3] = new Edit('4/5',link4);
+dinamic_edits[3] = new Edit('4',link4);
 editJS.append(dinamic_edits[3].edit_div);
-dinamic_edits[4] = new Edit('5/5',link5);
+dinamic_edits[4] = new Edit('5',link5);
 editJS.append(dinamic_edits[4].edit_div);
+dinamic_edits[5] = new Edit('6',link6);
+editJS.append(dinamic_edits[5].edit_div);
+dinamic_edits[6] = new Edit('7',link7);
+editJS.append(dinamic_edits[6].edit_div);
+dinamic_edits[7] = new Edit('8',link8);
+editJS.append(dinamic_edits[7].edit_div);
+dinamic_edits[8] = new Edit('9',link9);
+editJS.append(dinamic_edits[8].edit_div);
+dinamic_edits[9] = new Edit('10',link10);
+editJS.append(dinamic_edits[9].edit_div);
 
 
 
@@ -91,4 +101,3 @@ function play_stop_video() {
 
 let edit = document.querySelector(".edit-style>video");
 edit.pause();
-
