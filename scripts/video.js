@@ -12,15 +12,25 @@ editJS.append(dinamic_edits[3].edit_div);
 dinamic_edits[4] = new Edit('5/5',link5);
 editJS.append(dinamic_edits[4].edit_div);
 
+
+
+
 let count_edit =1;
 Edit_slide_show(count_edit);
+
+function EditChanges(n){
+    count_edit =n;
+    Edit_slide_show(count_edit);
+}
 
 function change(n){
     Edit_slide_show(count_edit +=n);
 }
 
 function Edit_slide_show(n){
+    ShowDots(n)
     play_edit(n)
+    
     let i;
     if(n>dinamic_edits.length){
         count_edit = 1;
@@ -32,6 +42,22 @@ function Edit_slide_show(n){
         dinamic_edits[i].edit_div.style.display = "none";
     }
     dinamic_edits[count_edit-1].edit_div.style.display = "block";
+    console.log(n);
+}
+function ShowDots(n){
+    let dot = document.querySelectorAll(".dot");
+    let i;
+    if(n>dot.length){
+        count_edit = 1;
+    }
+    if(n<1){
+        count_edit = dot.length;
+    }
+    for(i=0; i<dot.length; i++){
+        dot[i].style.background = "#11101d";
+    }
+    dot[count_edit-1].style.background = "#1d1b31";
+    console.log(n);
 }
 
 function play_edit(n){
@@ -65,3 +91,4 @@ function play_stop_video() {
 
 let edit = document.querySelector(".edit-style>video");
 edit.pause();
+
