@@ -53,3 +53,16 @@
     border: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px){
+    .dots{
+        position: absolute;
+        top: 610px;
+        left: 20px;
+    }
+    .dot{
+        width: 400px;
+        height: 45px;
+        margin: 0 0 10px 0;
+    }
+} 
