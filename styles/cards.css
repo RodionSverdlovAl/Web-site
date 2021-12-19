@@ -4,7 +4,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
     background: rgb(63, 63, 63);
 }
 
@@ -92,3 +92,18 @@
     transform: scale(1.2);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
+
+@media screen and (max-width: 500px){
+    .landing__content{
+        display: block;
+        width: 100vw;
+        justify-content: start;
+    }
+    .card{
+        margin: 6px;
+        display: grid;
+        grid-template-columns: 280px;
+        grid-template-rows: 220px 220px 90px;
+        width: 280px;
+    }
+} 

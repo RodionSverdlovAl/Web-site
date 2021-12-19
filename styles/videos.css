@@ -1,0 +1,36 @@
+.videos{
+    margin: 0;
+    padding: 0;
+    background: rgb(63, 63, 63);
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+}
+.video{
+    position: absolute;
+    left: 50px;
+    background: black;
+    height: 605px;
+}
+.next{
+    position: absolute;
+    height: 605px;
+    width: 40px;
+    left: 390px;
+    background-color: #11101d;
+    color: blanchedalmond;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.prev{
+    position: absolute;
+    height: 605px;
+    width: 40px;
+    left: 10px;
+    background-color: #11101d;
+    color: blanchedalmond;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}

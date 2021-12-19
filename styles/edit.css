@@ -1,0 +1,22 @@
+.edit-style video{
+    width: 340px;
+    border-radius: 5px;
+
+}
+.edit-style .edit-number{
+    position: absolute;
+    top: 0px;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.edit-style button{
+    width: 270px;
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 480px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    border: none;
+}

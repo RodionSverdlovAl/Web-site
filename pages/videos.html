@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/landing.css">
+    <link rel="stylesheet" href="../styles/videos.css">
+    <link rel="stylesheet" href="../styles/edit.css">
+    
+    <!--Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <a href="../pages/landing.html">
+                <div class="logo">
+                <i class='bx bxs-speaker'></i>
+                <div class="logo_name">Music</div>
+                </div>
+            </a>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-playlist'></i>
+                    <span class="links_name">Playlist</span>
+                </a>
+                <span class="tooltip">Playlist</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-music'></i>
+                    <span class="links_name">Music</span>
+                </a>
+                <span class="tooltip">Music</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-videos'></i>
+                    <span class="links_name">Vodeos</span>
+                </a>
+                <span class="tooltip">Vodeos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profil_details">
+                    <img src="../assets/image/avatarkagithub.png" alt="avatarka">
+                    <div class="name_job">
+                        <div class="name">Sverdlov Rodion</div>
+                        <div class="login">rodionsverdlov</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="landing__content">
+            <div class="videos">
+                <div class="video" id="video"></div>
+                <button class="next" onclick="change(1)">&#10095</button>
+                <button class="prev" onclick="change(-1)">&#10094</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/sourcelink.js"></script>
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/edit.js"></script>
+    <script src="../scripts/video.js"></script>
+</body>
+</html>
+

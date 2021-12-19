@@ -17,7 +17,7 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .sidebar{
@@ -29,6 +29,16 @@ body{
     background-color: #11101d;
     padding: 6px 14px;
     transition: all 0.5s ease;
+    z-index: 999999;
+}
+.sidebar.active a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+    white-space: nowrap;
 }
 .sidebar.active{
     width: 240px;
@@ -104,6 +114,7 @@ body{
     opacity: 0;
     pointer-events: none;
     display: block;
+    
 }
 .sidebar.active ul li .tooltip{
     display: none;
@@ -249,11 +260,9 @@ body{
 
 .home_content{
     position: absolute;
-    height: 100%;
     width: calc(100%-78px);
-    left: 78px;;
+    left: 78px;
     transition: all 0.5s ease;
-    
 }
 .home_content .text{
     font-size: 25px;
@@ -266,3 +275,14 @@ body{
     width:calc(100%-240px);
     left:240px;
 }
+
+@media screen and (min-width: 400px){
+    .home_content{
+        overflow: auto;
+        width: 100%;
+    }
+    .body{
+        width: 100%;
+    }
+
+} 
