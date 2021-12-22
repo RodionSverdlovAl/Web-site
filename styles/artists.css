@@ -1,0 +1,73 @@
+
+.home_content{
+    background: rgb(20, 20, 20);
+}
+.home_content h1{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    top: 300px;
+    left:200px;
+    font-size: 50px;
+}
+
+.artist_slider{
+    position: absolute;
+    left: 100px;
+}
+
+.artist_slider button{
+    position: absolute;
+    height: 500px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.336);
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+}
+.artist_slider .next{
+    left: 900px;
+}
+
+.artist_slider button:hover{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(107, 107, 107, 0.281);
+}
+
+.artist_slider .slide{
+   display: none;
+}
+
+
+@media screen and (max-width: 600px){
+    .artist_slider img{
+        width: 300px;
+        height: auto;
+    }
+    .artist_slider{
+        position: absolute;
+        left: 10px;
+    }
+    .artist_slider button{
+        position: absolute;
+        height: 150px;
+        width: 40px;
+        font-size: 20px;
+    }
+    .artist_slider .next{
+        left: 260px;
+    }
+    
+    .artist_slider button:hover{
+        font-size: 30px;
+    }
+
+    .home_content h1{
+        color: white;
+        margin-left: 80px;
+        padding: 5px 0px 5px 0px;
+        font-size: 30px;
+    }
+}
