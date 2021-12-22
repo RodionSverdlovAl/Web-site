@@ -48,7 +48,7 @@
                 <span class="tooltip">Music</span>
             </li>
             <li>
-                <a href="../pages/videos.html">
+                <a href="../../pages/videos.html">
                     <i class='bx bxs-videos'></i>
                     <span class="links_name">Vodeos</span>
                 </a>
@@ -82,8 +82,25 @@
             <button class="prev" onclick="change(1)">&#10094</button>
             <button class="next" onclick="change(-1)">&#10095</button>
         </div>
+        <div class="wrapper">
+            <div class="player">
+                <div class="title">Now Playing</div>
+                <div class="cover"><img class="cover__img" src="../../assets/image/pharaoh1000x500(1).png" alt="firsttrack"></div>
+                <div class="song">Pharaoh - silens</div>
+                <audio class="audio" src="../../assets/music/Pharaoh-Silens.mp3"></audio>
+                <div class="progress__container">
+                    <div class="progress"></div>
+                </div>
+                <div class="buttons">
+                    <div class="btn prevsong" onclick="prevSong()"><i class='bx bxs-skip-previous-circle'></i></div>
+                    <div class="btn play" id="play"><i class='bx bx-play play'></i></div>
+                    <div class="btn nextsong" onclick="nextSong()"><i class='bx bxs-skip-next-circle'></i></div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-
+    <script src="../../scripts/player.js"></script>
     <script src="../../scripts/sidebar.js"></script>
     <script src="../../scripts/artist.js"></script>
 </body>

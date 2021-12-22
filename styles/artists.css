@@ -71,3 +71,81 @@
         font-size: 30px;
     }
 }
+
+
+.wrapper{
+    position: absolute;
+    top:600px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: cornsilk;
+}
+.player{
+    background-color: rgb(253, 218, 143);
+    border-radius: 30px;
+    max-width: 380px;
+    width: 100%;
+    padding: 25px;
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+.cover .cover__img.active{
+    animation: rotateAnimation 5s linear infinite;
+}
+.progress__container{
+    background:chocolate;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.progress__container .progress{
+    background: #000;
+    border-radius: 5px;
+    height: 6px;
+}
+
+.cover img{
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    max-width: 184px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.buttons .btn{
+    cursor: pointer;
+}
+
+.play{
+    display: block;
+
+}
+.pause{
+    display: none;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
