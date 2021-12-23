@@ -1,4 +1,5 @@
 
+
 .home_content{
     background: rgb(20, 20, 20);
 }
@@ -41,9 +42,10 @@
 }
 
 
+
 @media screen and (max-width: 600px){
     .artist_slider img{
-        width: 300px;
+        width: 430px;
         height: auto;
     }
     .artist_slider{
@@ -52,12 +54,12 @@
     }
     .artist_slider button{
         position: absolute;
-        height: 150px;
+        height: 215px;
         width: 40px;
         font-size: 20px;
     }
     .artist_slider .next{
-        left: 260px;
+        left: 390px;
     }
     
     .artist_slider button:hover{
@@ -65,29 +67,28 @@
     }
 
     .home_content h1{
+        position: absolute;
+        top: 100px;
+        left: 20px;
         color: white;
-        margin-left: 80px;
+        margin-left: 30px;
         padding: 5px 0px 5px 0px;
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
 
 .wrapper{
     position: absolute;
-    top:600px;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: cornsilk;
+    top: 600px;
+    left: 100px;
+    background: rgb(20, 20, 20);
 }
 .player{
-    background-color: rgb(253, 218, 143);
+    background-color: #252525;
     border-radius: 30px;
     max-width: 380px;
-    width: 100%;
+    width: 400px;
     padding: 25px;
 }
 .cover{
@@ -99,7 +100,7 @@
     animation: rotateAnimation 5s linear infinite;
 }
 .progress__container{
-    background:chocolate;
+    background:rgb(255, 255, 255);
     border-radius: 5px;
     width: 100%;
     height: 10px;
@@ -115,8 +116,8 @@
 }
 
 .cover img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 500px;
 }
 .buttons{
@@ -128,9 +129,19 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 45px;
+    color: white;
 }
 .buttons .btn{
     cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: white;
+}
+.song{
+    text-align: center;
+    color: white;
+    font-size: 24px;
 }
 
 .play{
@@ -147,5 +158,21 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        position: absolute;
+        top: 250px;
+        left: 40px;
+        background: rgb(20, 20, 20);
+    }
+    .player{
+        background-color: #252525;
+        border-radius: 30px;
+        max-width: 380px;
+        width: 400px;
+        padding: 25px;
     }
 }
