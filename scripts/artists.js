@@ -16,6 +16,7 @@ artists[2] = new slide('../assets/image/artist3.jpg'); artistJS.append(artists[2
 artists[3] = new slide('../assets/image/artist4.jpg'); artistJS.append(artists[3].slide_div);
 artists[4] = new slide('../assets/image/artist5.jpg'); artistJS.append(artists[4].slide_div);
 artists[0].slide_div.style.display = "block";
+
 let number_slide = 0;
 
 function change(n){
