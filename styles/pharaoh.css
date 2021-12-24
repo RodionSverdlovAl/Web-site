@@ -1,0 +1,184 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow:hidden;
+    background: rgb(20, 20, 20);
+}
+
+.home_content{
+    background: rgb(20, 20, 20);
+}
+.home_content h1{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    top: 300px;
+    left:200px;
+    font-size: 50px;
+}
+
+.artist_slider{
+    position: absolute;
+    left: 100px;
+}
+
+.artist_slider button{
+    position: absolute;
+    height: 500px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.336);
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+}
+.artist_slider .next{
+    left: 900px;
+}
+
+.artist_slider button:hover{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(107, 107, 107, 0.281);
+}
+
+.artist_slider .slide{
+   display: none;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .artist_slider img{
+        width: 430px;
+        height: auto;
+    }
+    .artist_slider{
+        position: absolute;
+        left: 10px;
+    }
+    .artist_slider button{
+        position: absolute;
+        height: 215px;
+        width: 40px;
+        font-size: 20px;
+    }
+    .artist_slider .next{
+        left: 390px;
+    }
+    
+    .artist_slider button:hover{
+        font-size: 30px;
+    }
+
+    .home_content h1{
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        color: white;
+        margin-left: 30px;
+        padding: 5px 0px 5px 0px;
+        font-size: 20px;
+    }
+}
+
+
+.wrapper{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    background: rgb(20, 20, 20);
+}
+.player{
+    background-color: #252525;
+    border-radius: 30px;
+    max-width: 380px;
+    width: 400px;
+    padding: 25px;
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+.cover .cover__img.active{
+    animation: rotateAnimation 5s linear infinite;
+}
+.progress__container{
+    background:rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.progress__container .progress{
+    background: #000;
+    border-radius: 5px;
+    height: 6px;
+}
+
+.cover img{
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    max-width: 184px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 45px;
+    color: white;
+}
+.buttons .btn{
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: white;
+}
+.song{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.play{
+    display: block;
+
+}
+.pause{
+    display: none;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        position: absolute;
+        top: 250px;
+        left: 40px;
+        background: rgb(20, 20, 20);
+    }
+    .player{
+        background-color: #252525;
+        border-radius: 30px;
+        max-width: 380px;
+        width: 400px;
+        padding: 25px;
+    }
+}
