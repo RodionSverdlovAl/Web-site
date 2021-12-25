@@ -36,5 +36,3 @@ function showSlides(n){
     }
     artists[number_slide-1].slide_div.style.display = "block";
 }
-
-

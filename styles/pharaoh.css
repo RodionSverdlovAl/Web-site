@@ -5,7 +5,6 @@ body{
     overflow:hidden;
     background: rgb(20, 20, 20);
 }
-
 .home_content{
     background: rgb(20, 20, 20);
 }
@@ -211,8 +210,8 @@ body{
 
 .videos{
     position: absolute;
-    top: 600px;
-    left: 600px;
+    top: 1200px;
+    left: 67px;
    
 }
 .video{
@@ -253,4 +252,18 @@ body{
     background: rgba(46, 46, 46, 0.329);
     font-size: 34px;
     color: rgb(255, 255, 255);
+}
+
+
+
+
+.youtubevideos{
+    position: absolute;
+    top: 600px;
+    left: 530px;
+
+}
+.youtubevideos iframe{
+    margin: 0 0 10px 0;
+    border-radius: 30px;
 }
