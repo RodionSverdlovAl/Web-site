@@ -46,6 +46,10 @@ body{
    display: none;
 }
 
+.artist_slider .slide img{
+    border-radius: 20px;
+}
+
 
 
 @media screen and (max-width: 600px){
