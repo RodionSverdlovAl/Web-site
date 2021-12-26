@@ -3,7 +3,7 @@ body{
     min-height: 100vh;
     width: 100%;
     overflow:hidden;
-    background: linear-gradient(to bottom, #0A1228, #142144);
+    background: linear-gradient(to bottom, rgb(20, 20, 20), rgb(29, 29, 29));
 }
 .container{
     width: 100%;
@@ -45,6 +45,10 @@ body{
     height: 100px;
     width: 100px;
     border-radius: 100px;
+    
+}
+.artists__box .artist img:hover{
+    box-shadow: 0px 0px 18px crimson;
 }
 
 .artists__box .artist .name{

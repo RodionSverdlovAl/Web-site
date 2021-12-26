@@ -13,7 +13,7 @@ const player = document.querySelector('.player'),
 const PauseBUTTON = document.getElementById("pause");
 const PlayBUTTON = document.getElementById("play");
 
-const songs = ['Pharaoh-Ртуть','Pharaoh-Мой Ангел','Pharaoh-Silens']
+const songs = ['Pharaoh-Ртуть','Pharaoh-Мой Ангел','Pharaoh - Reloadead']
 
 let songIndex = 0;
 
