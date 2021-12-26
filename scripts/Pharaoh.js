@@ -1,3 +1,14 @@
+
+let preloader = document.getElementById("preloader");
+let preloadervideo =  document.getElementById("preloadervideo");
+
+preloadervideo.play();
+function Dnone(){
+    preloader.style.display = 'none'
+
+}
+setTimeout(Dnone,6500);
+
 let artistJS = document.getElementById("artist_slide");
 let artists = [];
 

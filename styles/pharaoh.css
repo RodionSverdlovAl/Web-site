@@ -11,7 +11,7 @@ body{
 .home_content h1{
     color: white;
     position: absolute;
-    z-index: 999;
+    z-index: 99;
     top: 300px;
     left:200px;
     font-size: 50px;
@@ -185,26 +185,6 @@ body{
     }
 }
 
-@media screen and (max-width: 600px){
-    .wrapper{
-        position: absolute;
-        top: 250px;
-        left: 40px;
-        background: rgb(20, 20, 20);
-    }
-    .player{
-        background-color: #252525;
-        border-radius: 30px;
-        max-width: 380px;
-        width: 400px;
-        padding: 25px;
-    }
-}
-
-
-
-
-
 .edit-style video{
     width: 340px;
     border-radius: 5px;
@@ -287,4 +267,53 @@ body{
     margin: 0 0 10px 0;
     border-radius: 30px;
     box-shadow: 0px 0px 11px crimson;
+}
+
+.preloader{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(29, 29, 29, 0));
+    position: absolute;
+    z-index: 99999998;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background:black;
+}
+.preloader video{
+    box-shadow: 0px 10px 200px #FF1C1C;
+    -webkit-filter: grayscale(100%) blur(10px);
+    filter: grayscale(100%) blur(2px);
+}
+    
+    
+
+
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        position: absolute;
+        top: 250px;
+        left: 40px;
+        background: rgb(20, 20, 20);
+    }
+    .player{
+        background-color: #252525;
+        border-radius: 30px;
+        max-width: 380px;
+        width: 400px;
+        padding: 25px;
+    }
+    .videos{
+        top: 800px;
+        left: 0px;
+       
+    }
+    .youtubevideos{
+        top: 1500px;
+        left: 10px;
+    }
+    body{
+        overflow:scroll;
+    }
 }
