@@ -15,7 +15,7 @@ artists[1] = new slide('../assets/image/artist2.jpg'); artistJS.append(artists[1
 artists[2] = new slide('../assets/image/artist3.jpg'); artistJS.append(artists[2].slide_div);
 artists[3] = new slide('../assets/image/artist4.jpg'); artistJS.append(artists[3].slide_div);
 artists[4] = new slide('../assets/image/artist5.jpg'); artistJS.append(artists[4].slide_div);
-artists[0].slide_div.style.display = "block";
+artists[0].slide_div.style.visibility = "visible";
 
 let number_slide = 0;
 
@@ -34,7 +34,7 @@ function showSlides(n){
     }
     
     for(i=0; i<artists.length; i++){
-        artists[i].slide_div.style.display = "none";
+        artists[i].slide_div.style.visibility = "hidden";
     }
-    artists[number_slide-1].slide_div.style.display = "block";
+    artists[number_slide-1].slide_div.style.visibility = "visible";
 }

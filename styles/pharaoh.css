@@ -5,7 +5,6 @@ body{
     overflow:hidden;
     background: rgb(20, 20, 20);
 }
-
 .home_content{
     background: rgb(20, 20, 20);
 }
@@ -45,6 +44,10 @@ body{
 
 .artist_slider .slide{
    display: none;
+}
+
+.artist_slider .slide img{
+    border-radius: 20px;
 }
 
 
@@ -181,4 +184,90 @@ body{
         width: 400px;
         padding: 25px;
     }
+}
+
+
+
+
+
+.edit-style video{
+    width: 340px;
+    border-radius: 5px;
+}
+.edit-style .edit-number{
+    position: absolute;
+    top: 0px;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.edit-style button{
+    width: 340px;
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 605px;
+    background-color: rgba(90, 90, 90, 0);
+    cursor: pointer;
+    border: none;
+}
+
+.videos{
+    position: absolute;
+    top: 1200px;
+    left: 67px;
+   
+}
+.video{
+    border-radius: 8px;
+    position: absolute;
+    left: 50px;
+    background: black;
+    height: 605px;
+}
+.nextV{
+    background: rgba(46, 46, 46, 0);
+    position: absolute;
+    height: 605px;
+    width: 40px;
+    left: 390px;
+    color: rgba(255, 255, 255, 0.26);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.nextV:hover{
+    background: rgba(46, 46, 46, 0.329);
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+}
+.prevV{
+    background: rgba(46, 46, 46, 0);
+    position: absolute;
+    height: 605px;
+    width: 40px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.26);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.prevV:hover{
+    background: rgba(46, 46, 46, 0.329);
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.youtubevideos{
+    position: absolute;
+    top: 600px;
+    left: 530px;
+
+}
+.youtubevideos iframe{
+    margin: 0 0 10px 0;
+    border-radius: 30px;
 }

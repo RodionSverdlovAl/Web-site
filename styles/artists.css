@@ -34,6 +34,11 @@ body{
 }
 .artists__box .artist{
     margin: 0 60px 0 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.artists__box .artist:hover{
+    transform: scale(1.2);
 }
 
 .artists__box .artist img{
@@ -46,7 +51,7 @@ body{
     text-align: center;
     margin-top: 5px;
 }
-.artists__box .artist .name a{
+.artists__box a{
     text-decoration: none;
     color: #FFF;
 }
@@ -67,8 +72,10 @@ body{
     left: 50px;
 }
 .slider .slide{
-    display: none;
+    position: absolute;
+    visibility: hidden;
 }
+
 .slider .slide img{
     border-radius: 20px;
 }
@@ -85,10 +92,14 @@ body{
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    z-index: 5;
+
+    
 }
 .slider .next{
     position: absolute;
     left: 710px;
+
 }
 
 @media screen and (max-width: 600px){

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/landing.css">
+    <link rel="stylesheet" href="../../styles/pharaoh.css">
+    
+    <!--Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>LIL KRYSTALLL</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <a href="../landing.html">
+                <div class="logo">
+                <i class='bx bx-headphone'></i>
+                <div class="logo_name">Music</div>
+                </div>
+            </a>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="../artists.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Artists</span>
+                </a>
+                <span class="tooltip">Artists</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-playlist'></i>
+                    <span class="links_name">Playlist</span>
+                </a>
+                <span class="tooltip">Playlist</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-music'></i>
+                    <span class="links_name">Music</span>
+                </a>
+                <span class="tooltip">Music</span>
+            </li>
+            <li>
+                <a href="../../pages/videos.html">
+                    <i class='bx bxs-videos'></i>
+                    <span class="links_name">Vodeos</span>
+                </a>
+                <span class="tooltip">Vodeos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profil_details">
+                    <img src="../../assets/image/avatarkagithub.png" alt="avatarka">
+                    <div class="name_job">
+                        <div class="name">Sverdlov Rodion</div>
+                        <div class="login">rodionsverdlov</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <h1>LIL KRYSTALLL</h1>
+        <div class="artist_slider" id="artist_slide">
+
+            <button class="prev" onclick="change(1)">&#10094</button>
+            <button class="next" onclick="change(-1)">&#10095</button>
+        </div>
+
+        <div class="youtubevideos">
+            <iframe width="500" height="290" src="https://www.youtube.com/embed/If-2V11vxGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="500" height="290" src="https://www.youtube.com/embed/7Vu5e-NTaI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="videos">
+            <div class="video" id="video"></div>
+                <button class="nextV" onclick="changeV(1)">&#10095</button>
+                <button class="prevV" onclick="changeV(-1)">&#10094</button>
+        </div>
+        <div class="wrapper">
+            <div class="player">
+                <div class="title">Now Playing</div>
+                <div class="cover"><img class="cover__img" src="../../assets/image/pharaoh1000x500(1).png" alt="firsttrack"></div>
+                <div class="song">Pharaoh - silens</div>
+                <audio class="audio" src="../../assets/music/Pharaoh-Silens.mp3"></audio>
+                <div class="progress__container">
+                    <div class="progress"></div>
+                </div>
+                <div class="buttons">
+                    <div class="btn prevsong" onclick="prevSong()"><i class='bx bxs-skip-previous-circle'></i></div>
+                    <div class="btn play" id="play"><i class='bx bx-play play'></i></div>
+                    <div class="btn nextsong" onclick="nextSong()"><i class='bx bxs-skip-next-circle'></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/edit.js"></script>
+    <script src="../../scripts/lilkristalll_video.js"></script>
+    <script src="../../scripts/lilkristalllPlayer.js"></script>
+    <script src="../../scripts/sidebar.js"></script>
+    <script src="../../scripts/lilkrystalll.js"></script>
+</body>
+</html>
