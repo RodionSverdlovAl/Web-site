@@ -21,19 +21,24 @@ body{
     background: rgb(63, 63, 63);
 }
 
+
 .sidebar{
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 78px;
-    background-color: #11101d;
+    background-color: crimson;
     padding: 6px 14px;
     transition: all 0.5s ease;
     z-index: 999999;
 }
+.sidebar i{
+    color:black;
+    font-size: 22px;
+}
 .sidebar.active a{
-    color: #fff;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -45,7 +50,7 @@ body{
     width: 240px;
 }
 .sidebar .logo_content .logo{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: flex;
     height: 50px;
     width: 100%;
@@ -70,23 +75,24 @@ body{
 }
 
 .sidebar #btn{
-    color: #fff;
+    color: rgb(0, 0, 0);
     position: absolute;
     left: 50%;
     top: 6px;
-    font-size: 20px;
+    font-size: 28px;
     height: 50px;
     width:  50px;
     text-align: center;
     line-height: 50px;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 .sidebar.active #btn{
     left: 90%;
 }
 
 .sidebar ul{
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .sidebar ul li{
@@ -136,27 +142,27 @@ body{
     border-radius: 10px;
     outline: none;
     border: none;
-    background: #1d1b31;
+    background: rgb(165, 33, 59);
     padding-left:  50px;
     font-size: 18px;
-    color: #fff;
+    color: black;
 
 }
 
 .sidebar ul li .bx-search{
     position: absolute;
     z-index: 99;
-    color: #fff;
+    color: black;
     font-size: 22px;
     transition: all 0.5 ease;
 }
 .sidebar ul li .bx-search:hover{
-    background: #fff;
-    color: #1d1b31;
+    background: black;
+    color: rgb(165, 33, 59);
 }
 
 .sidebar ul li a{
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -166,8 +172,13 @@ body{
 }
 
 .sidebar ul li a:hover{
-    color: #11101d;
-    background: #fff;
+    color: rgb(165, 33, 59);
+    background: black;
+}
+
+.sidebar ul li i:hover{
+    color: rgb(165, 33, 59);
+    background: black;
 }
 
 .sidebar ul li i{
@@ -188,7 +199,7 @@ body{
 }
 .sidebar .profile_content{
     position: absolute;
-    color: #fff;
+    color: black;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -202,7 +213,7 @@ body{
 }
 
 .sidebar.active .profile_content .profile{
-    background: #1d1b31;
+    background: rgb(165, 33, 59);
 }
 
 .profile_content .profile .profil_details{
@@ -248,7 +259,7 @@ body{
     border-radius:12px ;
     text-align: center;
     transition: all 0.4s ease;
-    background: #1d1b31;
+    background: rgb(165, 33, 59);
 }
 
 .sidebar.active .profile #log_out{
