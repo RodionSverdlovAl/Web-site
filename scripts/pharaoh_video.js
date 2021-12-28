@@ -3,11 +3,13 @@ let dinamic_edits = [];
 
 let link1 = '../../assets/videos/video1.mp4';
 let link2 = '../../assets/videos/video7.mp4';
-let link3 = '../../assets/videos/video3.mp4';
+let link3 = '../../assets/videos/video15.mp4';
+let link4 = '../../assets/videos/video16.mp4';
 
 dinamic_edits[0] = new Edit('1',link1); editJS.append(dinamic_edits[0].edit_div);
 dinamic_edits[1] = new Edit('2',link2); editJS.append(dinamic_edits[1].edit_div);
 dinamic_edits[2] = new Edit('3',link3); editJS.append(dinamic_edits[2].edit_div);
+dinamic_edits[3] = new Edit('4',link4); editJS.append(dinamic_edits[3].edit_div);
 
 let count_edit =1;
 Edit_slide_show(count_edit);
