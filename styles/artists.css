@@ -11,19 +11,22 @@ body{
     
 }
 .container .bx-search{
-    color: #959DA7;
+    color:crimson;
     position: absolute;
     top: 40px;
     left: 40px;
     font-size: 16px;
 }
 .container input{
-    color: #706E6E;
+    color: crimson;
     background: #0a122800;
     position: absolute;
     top: 40px;
     left: 58px;
     border: none;
+}
+.container input ::placeholder{
+    color: crimson;
 }
 
 .artists__box{

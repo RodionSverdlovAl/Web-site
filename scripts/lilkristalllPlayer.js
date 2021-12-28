@@ -8,7 +8,8 @@ const player = document.querySelector('.player'),
     progress = document.querySelector('.progress'),
     title = document.querySelector('.song'),
     cover = document.querySelector('.cover__img'),
-    imgSrc = document.querySelector('.img__src')
+    imgSrc = document.querySelector('.img__src'),
+    HeadTitle = document.querySelector('.HeadTitle')
 
 const PauseBUTTON = document.getElementById("pause");
 const PlayBUTTON = document.getElementById("play");
@@ -27,13 +28,14 @@ function loadSong(song){
 loadSong(songs[songIndex])
 
 function playSong(){
+    HeadTitle.innerHTML = songs[songIndex]
     player.classList.add('play')
     cover.classList.add('active')
     audio.play();
 }
 
 function pauseSong(){
-    
+    HeadTitle.innerHTML = "LIL KRYSTALLL"
     player.classList.remove('play')
     cover.classList.remove('active')
     
