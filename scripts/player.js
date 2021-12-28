@@ -14,7 +14,7 @@ const player = document.querySelector('.player'),
 const PauseBUTTON = document.getElementById("pause");
 const PlayBUTTON = document.getElementById("play");
 
-const songs = ['Pharaoh-Ртуть','Pharaoh-Мой Ангел','Pharaoh - Reloadead']
+const songs = ['Pharaoh-Ртуть','Pharaoh-Мой Ангел','Pharaoh - Homeless God (feat. Jeembo)']
 
 let songIndex = 0;
 
