@@ -49,6 +49,7 @@ body{
 .sidebar.active{
     width: 240px;
 }
+
 .sidebar .logo_content .logo{
     color: rgb(0, 0, 0);
     display: flex;
