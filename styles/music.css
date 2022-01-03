@@ -1,0 +1,23 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow:hidden;
+    background: rgb(20, 20, 20);
+}
+.home_content{
+    background: rgb(20, 20, 20);
+}
+
+.music-box {
+
+}
+.back{
+    width: 200px;
+    height: auto;
+}
+.track-name{
+    font-size: 20px;
+    color: white;
+    
+}

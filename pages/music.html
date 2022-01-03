@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/landing.css">
+    <link rel="stylesheet" href="../styles/music.css">
+    
+    
+    <!--Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Music</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <a href="../pages/landing.html">
+                <div class="logo">
+                <i class='bx bx-headphone'></i>
+                <div class="logo_name">Music</div>
+                </div>
+            </a>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li class="ss">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="../pages/artists.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Artists</span>
+                </a>
+                <span class="tooltip">Artists</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-playlist'></i>
+                    <span class="links_name">Playlist</span>
+                </a>
+                <span class="tooltip">Playlist</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-music'></i>
+                    <span class="links_name">Music</span>
+                </a>
+                <span class="tooltip">Music</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-videos'></i>
+                    <span class="links_name">Videos</span>
+                </a>
+                <span class="tooltip">Videos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profil_details">
+                    <img src="../assets/image/avatarkagithub.png" alt="avatarka">
+                    <div class="name_job">
+                        <div class="name">Sverdlov Rodion</div>
+                        <div class="login">rodionsverdlov</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="wrapper">
+            <div class="music-box">
+                <img src="../assets/image/cover10.jpg" alt="обложка" class="back">
+                <p class="track-name">track name</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/sidebar.js"></script>
+</body>
+</html>
