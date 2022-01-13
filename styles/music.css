@@ -1,0 +1,165 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow:hidden;
+    background: rgb(20, 20, 20);
+}
+.home_content{
+    background: rgb(20, 20, 20);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    margin-bottom: 110px;
+    margin-left: 30px;
+}
+.music-box{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.music-box img{
+    
+    cursor: pointer;
+}
+.music-box img:hover{
+    box-shadow: 0px 0px 11px crimson;
+}
+.back{
+    width: 180px;
+    height: auto;
+}
+.track-name{
+    font-size: 16px;
+    color: white;
+    
+}
+.artist{
+    font-size: 14px;
+    color: white;
+}
+.play-box{
+    color: crimson;
+    position: absolute;
+    background: none;
+    border: none;
+    border-radius: 100px;
+    font-size: 70px;
+    top: 50px;
+    left: 50px
+}
+.stop-box{
+    color: crimson;
+    position: absolute;
+    background: none;
+    border: none;
+    border-radius: 100px;
+    font-size: 70px;
+    top: 50px;
+    left: 50px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 100;
+    width:95%;
+}
+
+.player{
+    display: flex;
+    background-color: #000000;
+    padding: 25px;
+    box-shadow: 0px 0px 11px crimson;
+    height: 100px;
+}
+.player i:hover{
+    color: crimson;
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    margin: -20px 0px;
+}
+.cover .cover__img{
+    filter: blur(3px);
+}
+.cover .cover__img.active{
+    animation: rotateAnimation 5s linear infinite;
+    box-shadow: 0px 0px 31px crimson;
+    filter: none;
+    
+}
+.progress__container{
+    background:rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 80%;
+    height: 10px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.progress__container .progress{
+    background: crimson;
+    box-shadow: 0px 0px 11px crimson;
+    border-radius: 5px;
+    height: 6px;
+}
+
+.cover img{
+    width: 90px;
+    height: 90px;
+    border-radius: 500px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    max-width: 184px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: white;
+}
+.buttons .btn{
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: white;
+}
+.song{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.play{
+    display: block;
+
+}
+.pause{
+    display: none;
+}

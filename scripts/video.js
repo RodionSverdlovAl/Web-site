@@ -51,7 +51,7 @@ function ShowDots(n){
     count_edit = dot.length;
   }
   for(i=0; i<dot.length; i++){
-    dot[i].style.background = "#11101d";
+    dot[i].style.background = "black";
   }
   dot[count_edit-1].style.background = "#1d1b31";
   console.log(n);
